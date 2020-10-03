@@ -1,6 +1,29 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
-<h1>Cocktails#index</h1>
+
+<div class="home-banner">
+  <div class="container">
+    <h1>Cocktails 4 U</h1>
+    <p>Let’s find the best cocktails based on your preferences</p>
+    <div class="search-form">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="cards">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      Breakfast
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+      Lunch
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+      Dinner
+    </div>
+  </div>
+</div>
+  
 <ul>
  <% @cocktails.each do |cocktail| %>
   <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
