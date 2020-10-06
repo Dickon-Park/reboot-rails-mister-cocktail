@@ -1,5 +1,4 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<h1> Your Cocktail!</h1>
 <h2> <%= @cocktail.name %> </h2>
 
 <% @cocktail.doses.each do |dose| %>
@@ -8,11 +7,10 @@
     <i class="fa fa-trash destroy_dose"></i>
   <% end %>
 <% end %>
+ 
   
 <h1> create a new dose!</h1>
-
 <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
-
 <%= link_to "Delete #{@cocktail.name}",
             cocktail_path(@cocktail),
             method: :delete,
