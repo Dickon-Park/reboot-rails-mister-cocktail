@@ -4,10 +4,13 @@
     <p>Let’s find the best cocktail based on your preferences</p>
   </div>
 </div>
-  
-<ul>
- <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
 
+<div class="container">
+  <div class="cards">
+  <ul>
+  <% @cocktails.each do |cocktail| %>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <% end %>
+  </ul>
+  </div>
+</div> 
