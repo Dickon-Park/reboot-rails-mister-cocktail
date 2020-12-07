@@ -2,5 +2,6 @@
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true, class: 'd-none' }, label_html: { class: 'upload-photo'}, label: '📷 Upload photos' %>
   <%= f.submit %>
 <% end %>
